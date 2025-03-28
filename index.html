@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nyra Live2D</title>
-    <script type="module" src="nyra_display.js"></script>
-    <style>
-        body {
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #222;
-        }
-        canvas {
-            position: absolute;
-        }
-    </style>
+    <title>Nyra Display</title>
+    
+    <!-- Cargar PIXI.js desde el CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/pixi.js@7.0.0/dist/pixi.min.js"></script>
+
+    <!-- Cargar Pixi Live2D Display desde un CDN o tu archivo local -->
+    <script src="https://cdn.jsdelivr.net/npm/pixi-live2d-display@0.4.0/dist/pixi-live2d-display.min.js"></script>
+
+    <!-- Cargar Live2D Cubism Core desde tu archivo local -->
+    <script src="libs/live2dcubismcore.min.js"></script>
+
 </head>
 <body>
+    <!-- Contenedor para el modelo Live2D -->
     <canvas id="live2d-canvas"></canvas>
+
+    <!-- Script principal que manejará la carga del modelo -->
+    <script src="nyra_display.js"></script>
 </body>
 </html>
