@@ -1,6 +1,7 @@
 // Importamos PIXI y pixi-live2d-display desde un CDN
 import * as PIXI from 'https://cdn.jsdelivr.net/npm/pixi.js@7/dist/pixi.mjs';
-import { Live2DModel } from 'https://cdn.jsdelivr.net/npm/pixi-live2d-display@0.5.7/dist/index.min.mjs';
+import { Live2DModel } from 'import { Live2DModel } from 'https://cdn.jsdelivr.net/npm/pixi-live2d-display@0.4.0/dist/pixi-live2d-display.min.js';
+';
 
 // Creamos una aplicación PIXI
 const app = new PIXI.Application({
