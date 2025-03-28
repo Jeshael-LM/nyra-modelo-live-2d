@@ -1,4 +1,5 @@
 // Importamos PIXI y pixi-live2d-display desde un CDN
+import { Live2D } from './libs/live2dcubismcore.min.js';
 import * as PIXI from 'https://cdn.jsdelivr.net/npm/pixi.js@7/dist/pixi.mjs';
 import { Live2DModel } from 'import { Live2DModel } from 'https://cdn.jsdelivr.net/npm/pixi-live2d-display@0.4.0/dist/pixi-live2d-display.min.js';
 ';
