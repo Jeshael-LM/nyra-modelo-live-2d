@@ -12,19 +12,22 @@ const app = new PIXI.Application({
 
 document.body.appendChild(app.view);
 
-// Cargamos el modelo de Nyra
+// Cargamos el modelo de Nyra (ajustamos el nombre del archivo)
 Live2DModel.from('https://cdn.jsdelivr.net/gh/Jeshael-LM/nyra-modelo-live-2d@main/akari_vts/akari.model3.json').then(model => {
     model.scale.set(0.5); // Escalamos el modelo
     model.x = app.screen.width / 2;
     model.y = app.screen.height / 2;
     model.anchor.set(0.5);
     
+    // Asegúrate de que se añade correctamente al escenario
     app.stage.addChild(model);
 
     // Interactividad básica
     model.on('pointerdown', () => {
         console.log('Nyra ha sido tocada');
     });
+}).catch(error => {
+    console.error('Error al cargar el modelo:', error);
 });
 
 // Ajustamos el tamaño del canvas al cambiar el tamaño de la ventana
